@@ -1,0 +1,68 @@
+/* Global Typography Settings */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+  font-size: 16px; /* sets the base font size to 16px */
+  font-family: 'Poppins', sans-serif; /* sets the font family to Poppins */
+}
+
+/* Global Link Styles */
+
+a {
+  text-decoration: none;
+  color: #00c853; /* sets the default link color to #00c853 */
+  transition: color 0.2s ease; /* adds a smooth transition effect on hover */
+}
+
+a:hover {
+  color: #006d32; /* sets the hover link color to #006d32 */
+}
+
+/* Global Button Styles */
+
+button {
+  font-size: 1rem; /* sets the button font size to 1rem (16px) */
+  font-family: 'Poppins', sans-serif; /* sets the button font family to Poppins */
+  padding: 0.5rem 1rem; /* adds padding to the button */
+  border: none; /* removes the default button border */
+  border-radius: 0.25rem; /* adds a subtle border radius to the button */
+  background-color: #00c853; /* sets the default button background color to #00c853 */
+  color: #ffffff; /* sets the default button text color to #ffffff */
+  cursor: pointer; /* adds a pointer cursor on hover */
+  transition: background-color 0.2s ease; /* adds a smooth transition effect on hover */
+}
+
+button:hover {
+  background-color: #006d32; /* sets the hover button background color to #006d32 */
+}
+
+/* Global Spacing and Margins */
+
+* {
+  box-sizing: border-box; /* sets the box model to border-box */
+  margin: 0; /* removes the default margin */
+  padding: 0; /* removes the default padding */
+}
+
+body {
+  margin: 2rem; /* adds a 2rem margin to the body */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5rem; /* adds a 0.5rem margin bottom to headings */
+}
+
+p {
+  margin-bottom: 1rem; /* adds a 1rem margin bottom to paragraphs */
+}
+
+/* Global Responsive Design */
+
+@media (max-width: 768px) {
+  /* add responsive design styles here */
+}
+
+@media (max-width: 480px) {
+  /* add responsive design styles here */
+}
