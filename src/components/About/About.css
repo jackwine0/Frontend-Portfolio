@@ -1,60 +1,64 @@
+:root {
+  font-size: 16px; /* set the root font size to 16px */
+}
+
 #about-section {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #ffff;
-  }
-  
-  .about {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .about h2 {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  #about-section p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 20px;
-  }
-  
+  max-width: 75rem; /* 1200px / 16px = 75rem */
+  margin: 2.5rem auto; /* 40px / 16px = 2.5rem */
+  padding: 1.25rem; /* 20px / 16px = 1.25rem */
+  background-color: #ffff;
+}
+
+.about {
+  text-align: center;
+  margin-bottom: 1.25rem; /* 20px / 16px = 1.25rem */
+}
+
+.about h2 {
+  font-size: 1.5rem; /* 24px / 16px = 1.5rem */
+  font-weight: bold;
+}
+
+#about-section p {
+  font-size: 1rem; /* 16px / 16px = 1rem */
+  color: #666;
+  margin-bottom: 1.25rem; /* 20px / 16px = 1.25rem */
+}
+
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.25rem; /* 20px / 16px = 1.25rem */
+}
+
+.expertise-item {
+  background-color: #fff;
+  padding: 1.25rem; /* 20px / 16px = 1.25rem */
+  border: 0.0625rem solid #ddd; /* 1px / 16px = 0.0625rem */
+  border-radius: 0.625rem; /* 10px / 16px = 0.625rem */
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* 10px / 16px = 0.625rem */
+}
+
+.expertise-item h4 {
+  font-size: 1.125rem; /* 18px / 16px = 1.125rem */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.625rem; /* 10px / 16px = 0.625rem */
+}
+
+.expertise-item p {
+  font-size: 0.875rem; /* 14px / 16px = 0.875rem */
+  color: #666;
+}
+
+@media (max-width: 48rem) { /* 768px / 16px = 48rem */
   .expertise-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  .expertise-item {
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 30rem) { /* 480px / 16px = 30rem */
+  .expertise-grid {
+    grid-template-columns: 1fr;
   }
-  
-  .expertise-item h4 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .expertise-item p {
-    font-size: 14px;
-    color: #666;
-  }
-  
-  @media (max-width: 768px) {
-    .expertise-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .expertise-grid {
-      grid-template-columns: 1fr;
-    }
-  }
+}
